@@ -274,10 +274,13 @@
     </footer>
 
     <script>
+        
+        //AQUI VA LA ID DEL VIDEO QUE HAS SUBIDO A YT
         const YOUTUBE_VIDEO_ID = "eEdhpQqDnyI";
         
         const urlParams = new URLSearchParams(window.location.search);
         const IS_TEST_MODE = urlParams.has('test');
+        //CAMBIAR CUANDO SE CAMBIE EL VIDEO A LA DURACION DEL VIDEO
         const DURATION = 298;
 
         if (IS_TEST_MODE) {
@@ -286,6 +289,7 @@
 
         const TARGET_TIME_SECONDS = IS_TEST_MODE ? 5 : DURATION; 
         
+        //CAMBIAR TAMBIÉN CUANDO SE CAMBIE EL VIDEO
         const VIDEO_DURATION_EST = 315;  
 
         const STORAGE_KEY = 'la_verdad_oculta_de_latam';
